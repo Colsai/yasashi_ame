@@ -8,6 +8,7 @@ def draw_bar(label, value, max_value, length=20):
     bar = '█' * filled + ' ' * empty
     return f"{label}: [{bar}] {value}/{max_value}"
 
+
 def display_scene(scene_path, health, location, clear=True):
     if clear:
         os.system('clear')
@@ -17,8 +18,3 @@ def display_scene(scene_path, health, location, clear=True):
     with open(scene_path, 'r', encoding='utf-8') as f:
         for line in f:
             print(line.rstrip('\n'))
-
-if __name__ == '__main__':
-    health = 80
-    location = 'Dreamscape'
-    display_scene('scenes/prologue.txt', health, location)
