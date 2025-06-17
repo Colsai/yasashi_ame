@@ -54,6 +54,7 @@ def display_scene_gui(scene_path, health, location, clear=True, wait=True):
 
     curses.wrapper(_draw)
 
+
 def display_scene(scene_path, health, location, clear=True):
     if clear:
         os.system('clear')
@@ -64,7 +65,12 @@ def display_scene(scene_path, health, location, clear=True):
         for line in f:
             print(line.rstrip('\n'))
 
+
 if __name__ == '__main__':
     health = 80
     location = 'Dreamscape'
-    display_scene_gui('scenes/prologue.txt', health, location)
+    try:
+        display_scene_gui('scenes/prologue.txt', health, location)
+    except Exception as e:
+        print('GUI failed:', e)
+        display_scene('scenes/prologue.txt', health, location)
