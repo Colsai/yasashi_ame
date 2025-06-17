@@ -1,0 +1,16 @@
+###############################################
+#                                             #
+#                .-""-._                     #
+#              /        \                    #
+#             |  ()  ()  |                   #
+#              \  ____  /                    #
+#               `------'                     #
+#                                             #
+###############################################
+
+[NARRATOR]
+A repeated clang of metal rings in your ears.
+A bright glint of steel burns in your eyes.
+
+[INNER THOUGHTS]
+"He must have long forgotten any human fear..."
